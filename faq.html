@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Four Peaks Medical — Pain Management & MAT Questions, Laurel DE</title>
+  <meta name="description" content="Frequently asked questions about pain management and MAT/Suboxone treatment at Four Peaks Medical in Laurel, Delaware. Referrals, insurance, telehealth, and more." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fourpeaksmedical.com/faq.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://fourpeaksmedical.com/faq.html" />
+  <meta property="og:title"       content="FAQ | Four Peaks Medical" />
+  <meta property="og:description" content="Common questions about pain management and MAT treatment at Four Peaks Medical, Laurel Delaware." />
+  <meta name="geo.region"    content="US-DE" />
+  <meta name="geo.placename" content="Laurel, Delaware" />
+  <meta name="geo.position"  content="38.5568;-75.5710" />
+  <meta name="ICBM"          content="38.5568, -75.5710" />
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- FAQ Schema — rich results in Google / understood by LLMs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need a referral to become a patient at Four Peaks Medical?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A referral is required to become a patient. You or your doctor's office can call our office at 302-280-6358 to initiate the referral process. We'll walk you through what's needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What insurance does Four Peaks Medical accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Four Peaks Medical accepts most major insurance plans. Coverage and out-of-pocket costs vary by individual policy. Please call our office at 302-280-6358 to verify your specific plan before your first visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is MAT or Suboxone treatment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MAT stands for Medication-Assisted Treatment. It is an FDA-approved, evidence-based approach to treating opioid use disorder. Suboxone (buprenorphine/naloxone) is a medication used in MAT that reduces cravings and withdrawal symptoms, supporting long-term recovery. Four Peaks Medical provides MAT with a structured, non-judgmental approach."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I bring to my first appointment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Please bring: a valid photo ID, your insurance card, a list of your current medications (including dosages and prescribing provider), your referral documentation, any relevant medical records such as prior imaging or test results, and a form of payment. Payment is due at the time of service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Four Peaks Medical offer telehealth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Virtual appointments are available for eligible patients. You will need a device with a camera and microphone and a stable internet connection. You must be located in Delaware at the time of the visit. Call our office to find out if telehealth is appropriate for your situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I schedule an appointment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call our office at 302-280-6358. Our hours are Monday through Friday, 8:00 AM to 4:00 PM. A referral is required to schedule. You or your doctor's office can make this call."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your self-pay rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Self-pay rates at Four Peaks Medical are: New Patient Visit $250, Follow-Up Visit $150, Medication Management $125–$150, MAT Program $175, Urine Drug Screen (in-office) $25–$50. Payment is due at the time of service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Four Peaks Medical accepting new patients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Four Peaks Medical is actively accepting new patients of all ages. A referral is required to schedule your first appointment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Four Peaks Medical located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Four Peaks Medical is located at 116 E. Front Street, Suite A, Laurel, DE 19956. Office hours are Monday through Friday, 8:00 AM to 4:00 PM, by appointment only. Telehealth appointments are also available."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-lg);
+      align-items: start;
+    }
+
+    .faq-sidebar {
+      position: sticky;
+      top: calc(var(--header-h) + 2rem);
+    }
+
+    .faq-sidebar h3 {
+      font-size: 1rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .faq-category-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.6rem 0.9rem;
+      background: none;
+      border: none;
+      border-left: 2px solid var(--color-border);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: var(--color-ink-soft);
+      transition: all var(--transition);
+      margin-bottom: 0.25rem;
+    }
+
+    .faq-category-btn:hover,
+    .faq-category-btn.active {
+      border-left-color: var(--color-accent);
+      color: var(--color-accent);
+      background: var(--color-accent-lt);
+    }
+
+    .faq-category {
+      margin-bottom: var(--space-md);
+    }
+
+    .faq-category-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-ink-muted);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    @media (max-width: 800px) {
+      .faq-layout { grid-template-columns: 1fr; }
+      .faq-sidebar { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Four Peaks Medical — Home">
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18,145 78,42 138,145"/><path d="M55,88 Q62,82 70,86 Q76,80 84,84"/><path d="M44,105 Q54,98 62,102"/><path d="M90,100 Q100,94 108,98"/><polyline points="100,145 168,28 222,90 248,145"/><path d="M145,72 Q154,65 163,70 Q170,62 178,67"/><path d="M132,95 Q143,88 152,93"/><path d="M178,88 Q190,82 200,87"/><polyline points="210,145 272,30 326,90 348,145"/><path d="M248,72 Q257,65 265,70 Q272,62 280,67"/><path d="M236,94 Q246,87 255,92"/><path d="M278,88 Q289,82 299,87"/><polyline points="312,145 364,50 402,145"/><path d="M344,90 Q352,83 360,88"/><path d="M334,108 Q344,101 352,106"/><path d="M366,102 Q375,96 383,100"/></svg>
+        <div class="site-logo-text">
+          <span class="name">Four Peaks Medical</span>
+          
+        </div>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="new-patients.html">New Patients</a></li>
+          <li><a href="insurance-fees.html">Insurance &amp; Fees</a></li>
+          <li><a href="telehealth.html">Telehealth</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tel:3022806358" class="nav-cta">Call to Schedule</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label fade-up">Common Questions</span>
+        <h1 id="page-title" class="fade-up" data-delay="1">Frequently Asked Questions</h1>
+        <p class="fade-up" data-delay="2">
+          Answers to the questions we hear most often. If yours isn't here, 
+          just call us — we're happy to help.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="FAQ content">
+      <div class="container">
+        <div class="faq-layout">
+
+          <!-- Sidebar -->
+          <aside class="faq-sidebar fade-up" aria-label="FAQ categories">
+            <h3>Categories</h3>
+            <button class="faq-category-btn active" onclick="scrollToCategory('scheduling')">Scheduling &amp; Referrals</button>
+            <button class="faq-category-btn" onclick="scrollToCategory('mat')">MAT &amp; Suboxone</button>
+            <button class="faq-category-btn" onclick="scrollToCategory('insurance')">Insurance &amp; Fees</button>
+            <button class="faq-category-btn" onclick="scrollToCategory('telehealth')">Telehealth</button>
+            <button class="faq-category-btn" onclick="scrollToCategory('general')">General</button>
+
+            <div style="margin-top: var(--space-md); padding: 1.25rem; background: var(--color-accent-lt); border-radius: 4px;">
+              <p style="font-size:0.875rem; margin-bottom: 0.75rem; max-width:none;">
+                Still have questions? We're easy to reach.
+              </p>
+              <a href="tel:3022806358" class="btn btn-primary" style="font-size:0.78rem; padding: 0.6rem 1rem;">
+                Call 302-280-6358
+              </a>
+            </div>
+          </aside>
+
+          <!-- Questions -->
+          <div>
+
+            <!-- Scheduling -->
+            <div class="faq-category fade-up" id="scheduling">
+              <div class="faq-category-label">Scheduling &amp; Referrals</div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
+                  Do I need a referral to become a patient?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+                  <p>
+                    Yes. A referral is required to schedule your first appointment. You or your 
+                    doctor's office can call us at <a href="tel:3022806358" style="color:var(--color-accent);">302-280-6358</a> 
+                    to start the process. We'll walk you through what's needed and get you scheduled.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+                  How do I schedule my first appointment?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-2" role="region" aria-labelledby="faq-2-btn">
+                  <p>
+                    Call our office at <a href="tel:3022806358" style="color:var(--color-accent);">302-280-6358</a> 
+                    during business hours — Monday through Friday, 8:00 AM to 4:00 PM. 
+                    Either you or your doctor's office can make this call. Have your referral 
+                    and insurance information ready if possible.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+                  What should I bring to my first appointment?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-3" role="region" aria-labelledby="faq-3-btn">
+                  <p>Please bring the following to your first visit:</p>
+                  <ul style="margin: 0.75rem 0 0 1rem; list-style: disc;">
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">Valid photo ID</li>
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">Insurance card (primary and secondary if applicable)</li>
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">List of current medications, including dosages</li>
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">Referral documentation from your provider</li>
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">Any relevant medical records or prior imaging</li>
+                    <li style="padding:0.25rem 0; font-size:0.9rem; color:var(--color-ink-soft);">Payment — due at time of service</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+                  Are you accepting new patients?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-4" role="region" aria-labelledby="faq-4-btn">
+                  <p>
+                    Yes. Four Peaks Medical is actively accepting new patients of all ages. 
+                    A referral is required to schedule. Call <a href="tel:3022806358" style="color:var(--color-accent);">302-280-6358</a> to get started.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MAT -->
+            <div class="faq-category fade-up" id="mat" data-delay="1">
+              <div class="faq-category-label">MAT &amp; Suboxone</div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+                  What is MAT (Medication-Assisted Treatment)?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-5" role="region" aria-labelledby="faq-5-btn">
+                  <p>
+                    Medication-Assisted Treatment (MAT) is an evidence-based, FDA-approved 
+                    approach to treating opioid use disorder. It uses medications like Suboxone 
+                    (buprenorphine/naloxone) to reduce cravings and withdrawal symptoms, making 
+                    it easier to focus on recovery and daily life.
+                  </p>
+                  <p style="margin-top: 0.75rem;">
+                    MAT is not "replacing one drug with another" — it is a medical treatment, 
+                    just like medication for any other chronic condition. At Four Peaks Medical, 
+                    MAT patients receive the same compassionate, structured care as all our patients.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">
+                  What is Suboxone, and is it right for me?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-6" role="region" aria-labelledby="faq-6-btn">
+                  <p>
+                    Suboxone is a brand name for buprenorphine/naloxone — the most commonly 
+                    used medication in MAT for opioid use disorder. It works by binding to 
+                    opioid receptors in the brain to reduce withdrawal and cravings without 
+                    producing a significant "high."
+                  </p>
+                  <p style="margin-top: 0.75rem;">
+                    Whether it is right for you depends on your individual situation. Call our 
+                    office and we can discuss your case and help you understand your options.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn">
+                  Will I be judged for seeking MAT or Suboxone treatment?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-7" role="region" aria-labelledby="faq-7-btn">
+                  <p>
+                    No. Opioid use disorder is a medical condition. Seeking help is not a 
+                    weakness — it is the right thing to do. At Four Peaks Medical, MAT 
+                    patients are treated with the same dignity and respect as every other 
+                    patient. Our practice was built around this belief.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insurance -->
+            <div class="faq-category fade-up" id="insurance" data-delay="2">
+              <div class="faq-category-label">Insurance &amp; Fees</div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-8" id="faq-8-btn">
+                  What insurance plans do you accept?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-8" role="region" aria-labelledby="faq-8-btn">
+                  <p>
+                    We accept most major insurance plans. Coverage and out-of-pocket costs 
+                    vary by individual policy. Please call our office at 
+                    <a href="tel:3022806358" style="color:var(--color-accent);">302-280-6358</a> 
+                    to verify your specific plan before your appointment.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-9" id="faq-9-btn">
+                  What are your self-pay rates?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-9" role="region" aria-labelledby="faq-9-btn">
+                  <p>Our current self-pay rates are:</p>
+                  <ul style="margin: 0.75rem 0 0 0; list-style:none;">
+                    <li style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--color-border); font-size:0.9rem;"><span>New Patient Visit</span><strong>$250</strong></li>
+                    <li style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--color-border); font-size:0.9rem;"><span>Follow-Up Visit</span><strong>$150</strong></li>
+                    <li style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--color-border); font-size:0.9rem;"><span>Medication Management</span><strong>$125 – $150</strong></li>
+                    <li style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--color-border); font-size:0.9rem;"><span>MAT Program</span><strong>$175</strong></li>
+                    <li style="display:flex; justify-content:space-between; padding:0.4rem 0; font-size:0.9rem;"><span>Urine Drug Screen</span><strong>$25 – $50</strong></li>
+                  </ul>
+                  <p style="margin-top:0.75rem; font-size:0.82rem;">Payment is due at time of service.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Telehealth -->
+            <div class="faq-category fade-up" id="telehealth" data-delay="3">
+              <div class="faq-category-label">Telehealth</div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-10" id="faq-10-btn">
+                  Do you offer telehealth appointments?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-10" role="region" aria-labelledby="faq-10-btn">
+                  <p>
+                    Yes. Virtual appointments are available for eligible patients. You'll 
+                    need a device with a camera and microphone and a stable internet 
+                    connection. You must be located in Delaware at the time of the visit. 
+                    Call us to find out if telehealth is right for your situation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-11" id="faq-11-btn">
+                  Does insurance cover telehealth visits?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-11" role="region" aria-labelledby="faq-11-btn">
+                  <p>
+                    Telehealth coverage varies by insurance plan. Many plans do cover 
+                    virtual visits. Call our office at 
+                    <a href="tel:3022806358" style="color:var(--color-accent);">302-280-6358</a> 
+                    and we can help clarify your coverage before your appointment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- General -->
+            <div class="faq-category fade-up" id="general" data-delay="4">
+              <div class="faq-category-label">General</div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-12" id="faq-12-btn">
+                  Where are you located and what are your hours?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-12" role="region" aria-labelledby="faq-12-btn">
+                  <p>
+                    We are located at <strong>116 E. Front Street, Suite A, Laurel, DE 19956</strong>. 
+                    Office hours are Monday through Friday, 8:00 AM to 4:00 PM, by appointment only. 
+                    Telehealth appointments are also available for eligible patients.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-13" id="faq-13-btn">
+                  What ages do you see?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-13" role="region" aria-labelledby="faq-13-btn">
+                  <p>
+                    Four Peaks Medical sees patients of all ages.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-14" id="faq-14-btn">
+                  How do I access the patient portal?
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-body" id="faq-14" role="region" aria-labelledby="faq-14-btn">
+                  <p>
+                    Four Peaks Medical uses <strong>Tebra</strong> as its patient portal and 
+                    electronic health record system. Portal access will be provided to you 
+                    as an established patient. Contact our office for login assistance.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div><!-- /questions -->
+        </div><!-- /faq-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" aria-label="Four Peaks Medical">
+            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18,145 78,42 138,145"/><path d="M55,88 Q62,82 70,86 Q76,80 84,84"/><path d="M44,105 Q54,98 62,102"/><path d="M90,100 Q100,94 108,98"/><polyline points="100,145 168,28 222,90 248,145"/><path d="M145,72 Q154,65 163,70 Q170,62 178,67"/><path d="M132,95 Q143,88 152,93"/><path d="M178,88 Q190,82 200,87"/><polyline points="210,145 272,30 326,90 348,145"/><path d="M248,72 Q257,65 265,70 Q272,62 280,67"/><path d="M236,94 Q246,87 255,92"/><path d="M278,88 Q289,82 299,87"/><polyline points="312,145 364,50 402,145"/><path d="M344,90 Q352,83 360,88"/><path d="M334,108 Q344,101 352,106"/><path d="M366,102 Q375,96 383,100"/></svg>
+            <div class="site-logo-text"><span class="name">Four Peaks Medical</span></div>
+          </a>
+          <p>Compassionate pain management and medication-assisted treatment in Laurel, Delaware.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="new-patients.html">New Patients</a></li>
+            <li><a href="insurance-fees.html">Insurance &amp; Fees</a></li>
+            <li><a href="telehealth.html">Telehealth</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            116 E. Front Street, Suite A<br />Laurel, DE 19956<br /><br />
+            <a href="tel:3022806358">302-280-6358</a><br />
+            Fax: 302-280-6321<br /><br />
+            Mon – Fri, 8:00 AM – 4:00 PM<br />By appointment only
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Four Peaks Medical. All rights reserved.</span>
+        <span>Brooke Montgomery, FNP-B &mdash; Licensed in Delaware</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/schema.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    function scrollToCategory(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const offset = 100;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+      document.querySelectorAll('.faq-category-btn').forEach(b => b.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

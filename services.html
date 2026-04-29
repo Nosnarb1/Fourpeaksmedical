@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Four Peaks Medical — Pain Management & MAT, Laurel DE</title>
+  <meta name="description" content="Four Peaks Medical offers chronic pain management, MAT/Suboxone treatment, medication management, and telehealth in Laurel, Delaware. Brooke Montgomery, FNP-B." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fourpeaksmedical.com/services.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://fourpeaksmedical.com/services.html" />
+  <meta property="og:title"       content="Services | Four Peaks Medical" />
+  <meta property="og:description" content="Pain management and MAT services in Laurel, Delaware." />
+
+  <!-- Geo meta tags -->
+  <meta name="geo.region"       content="US-DE" />
+  <meta name="geo.placename"    content="Laurel, Delaware" />
+  <meta name="geo.position"     content="38.5568;-75.5710" />
+  <meta name="ICBM"             content="38.5568, -75.5710" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Page-specific structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": "https://fourpeaksmedical.com/#practice",
+    "name": "Four Peaks Medical",
+    "url": "https://fourpeaksmedical.com",
+    "telephone": "+13022806358",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "116 E. Front Street, Suite A",
+      "addressLocality": "Laurel",
+      "addressRegion": "DE",
+      "postalCode": "19956",
+      "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pain Management & MAT Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Chronic Pain Management"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Medication-Assisted Treatment (MAT)"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Suboxone / Buprenorphine Treatment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Back and Neck Pain Management"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Fibromyalgia Treatment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Neuropathy Treatment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Headache Management"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Medication Management"}},
+        {"@type": "Offer", "itemOffered": {"@type": "MedicalTherapy", "name": "Telehealth Appointments"}}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    .services-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      align-items: start;
+      margin-top: var(--space-md);
+    }
+
+    .service-block {
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .service-block:first-child { border-top: none; }
+
+    .service-block-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-num {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      opacity: 0.7;
+      min-width: 2ch;
+      margin-top: 4px;
+    }
+
+    .service-block h3 { margin-bottom: 0.4rem; }
+
+    .service-block p {
+      padding-left: calc(2ch + 1rem);
+      max-width: 55ch;
+    }
+
+    .service-block .conditions-list {
+      padding-left: calc(2ch + 1rem);
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .condition-tag {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      background: var(--color-accent-lt);
+      color: var(--color-accent);
+      font-size: 0.78rem;
+      font-weight: 500;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
+    }
+
+    .mat-callout {
+      background: var(--color-ink);
+      color: var(--color-header-txt);
+      border-radius: 4px;
+      padding: var(--space-md) var(--space-md);
+      margin-top: var(--space-lg);
+    }
+
+    .mat-callout .section-label { color: var(--color-accent); }
+
+    .mat-callout h2 {
+      color: var(--color-header-txt);
+      margin-bottom: 0.75rem;
+    }
+
+    .mat-callout p {
+      color: rgba(247,245,242,0.65);
+      max-width: 60ch;
+      margin-bottom: var(--space-sm);
+    }
+
+    .mat-points {
+      margin: var(--space-sm) 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2rem;
+    }
+
+    .mat-points li {
+      display: flex;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: rgba(247,245,242,0.65);
+      align-items: flex-start;
+    }
+
+    .mat-points li::before {
+      content: '—';
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 700px) {
+      .services-hero-grid { grid-template-columns: 1fr; }
+      .mat-points { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Four Peaks Medical — Home">
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18,145 78,42 138,145"/><path d="M55,88 Q62,82 70,86 Q76,80 84,84"/><path d="M44,105 Q54,98 62,102"/><path d="M90,100 Q100,94 108,98"/><polyline points="100,145 168,28 222,90 248,145"/><path d="M145,72 Q154,65 163,70 Q170,62 178,67"/><path d="M132,95 Q143,88 152,93"/><path d="M178,88 Q190,82 200,87"/><polyline points="210,145 272,30 326,90 348,145"/><path d="M248,72 Q257,65 265,70 Q272,62 280,67"/><path d="M236,94 Q246,87 255,92"/><path d="M278,88 Q289,82 299,87"/><polyline points="312,145 364,50 402,145"/><path d="M344,90 Q352,83 360,88"/><path d="M334,108 Q344,101 352,106"/><path d="M366,102 Q375,96 383,100"/></svg>
+        <div class="site-logo-text">
+          <span class="name">Four Peaks Medical</span>
+          
+        </div>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="new-patients.html">New Patients</a></li>
+          <li><a href="insurance-fees.html">Insurance &amp; Fees</a></li>
+          <li><a href="telehealth.html">Telehealth</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tel:3022806358" class="nav-cta">Call to Schedule</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label fade-up">What We Treat</span>
+        <h1 id="page-title" class="fade-up" data-delay="1">Services</h1>
+        <p class="fade-up" data-delay="2">
+          Pain management and medication-assisted treatment rooted in evidence, 
+          delivered with compassion. We treat the whole person — not just the diagnosis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="section" aria-labelledby="pain-mgmt-heading">
+      <div class="container">
+
+        <span class="section-label fade-up">Pain Management</span>
+        <h2 id="pain-mgmt-heading" class="fade-up" data-delay="1">Chronic pain conditions we treat</h2>
+        <p class="section-intro fade-up" data-delay="2">
+          We offer structured, individualized treatment plans for a wide range of chronic pain 
+          conditions. Our goal is not just pain reduction — it's helping you regain function 
+          and get back to what matters.
+        </p>
+
+        <div role="list" aria-label="Pain management services">
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">01</span>
+              <h3>Chronic Pain Management</h3>
+            </div>
+            <p>
+              Long-term, comprehensive management of persistent pain conditions. We work 
+              with you to build a sustainable treatment plan that fits your life — one 
+              focused on function, not just symptom suppression.
+            </p>
+            <ul class="conditions-list" aria-label="Conditions treated">
+              <li><span class="condition-tag">Chronic Pain</span></li>
+              <li><span class="condition-tag">Generalized Pain Syndrome</span></li>
+              <li><span class="condition-tag">Complex Regional Pain</span></li>
+            </ul>
+          </div>
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">02</span>
+              <h3>Back &amp; Neck Pain</h3>
+            </div>
+            <p>
+              Evaluation and management of spinal pain conditions, including cervical and 
+              lumbar issues. We review your history and imaging to develop an appropriate 
+              treatment approach.
+            </p>
+            <ul class="conditions-list" aria-label="Conditions treated">
+              <li><span class="condition-tag">Lower Back Pain</span></li>
+              <li><span class="condition-tag">Neck Pain</span></li>
+              <li><span class="condition-tag">Degenerative Disc Disease</span></li>
+              <li><span class="condition-tag">Radiculopathy</span></li>
+            </ul>
+          </div>
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">03</span>
+              <h3>Fibromyalgia</h3>
+            </div>
+            <p>
+              Structured management for fibromyalgia — a condition that is often 
+              undertreated or dismissed. We take fibromyalgia seriously and develop 
+              tailored plans that acknowledge the full complexity of this diagnosis.
+            </p>
+            <ul class="conditions-list" aria-label="Conditions treated">
+              <li><span class="condition-tag">Fibromyalgia</span></li>
+              <li><span class="condition-tag">Widespread Pain</span></li>
+              <li><span class="condition-tag">Fatigue-Related Pain</span></li>
+            </ul>
+          </div>
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">04</span>
+              <h3>Neuropathy</h3>
+            </div>
+            <p>
+              Evaluation and management of neuropathic pain — the burning, shooting, or 
+              tingling pain caused by nerve damage. We identify contributing factors and 
+              work to reduce nerve pain and improve daily function.
+            </p>
+            <ul class="conditions-list" aria-label="Conditions treated">
+              <li><span class="condition-tag">Peripheral Neuropathy</span></li>
+              <li><span class="condition-tag">Diabetic Neuropathy</span></li>
+              <li><span class="condition-tag">Nerve Pain</span></li>
+            </ul>
+          </div>
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">05</span>
+              <h3>Headache Management</h3>
+            </div>
+            <p>
+              Ongoing management for patients with chronic or recurrent headaches. 
+              We evaluate patterns, triggers, and contributing conditions to develop 
+              a proactive treatment plan.
+            </p>
+            <ul class="conditions-list" aria-label="Conditions treated">
+              <li><span class="condition-tag">Chronic Headaches</span></li>
+              <li><span class="condition-tag">Migraines</span></li>
+              <li><span class="condition-tag">Tension Headaches</span></li>
+            </ul>
+          </div>
+
+          <div class="service-block fade-up" role="listitem">
+            <div class="service-block-header">
+              <span class="service-num" aria-hidden="true">06</span>
+              <h3>Medication Management</h3>
+            </div>
+            <p>
+              Safe, compliant oversight of pain medications for patients already on a 
+              pain regimen. Includes regular follow-ups, medication review, and 
+              urine drug screening as appropriate.
+            </p>
+            <ul class="conditions-list" aria-label="Services included">
+              <li><span class="condition-tag">Medication Review</span></li>
+              <li><span class="condition-tag">Compliance Monitoring</span></li>
+              <li><span class="condition-tag">Urine Drug Screen (in-office)</span></li>
+            </ul>
+          </div>
+
+        </div><!-- /role list -->
+
+        <!-- MAT Callout -->
+        <div class="mat-callout fade-up">
+          <span class="section-label">Medication-Assisted Treatment</span>
+          <h2>MAT &amp; Suboxone Program</h2>
+          <p>
+            Four Peaks Medical offers medication-assisted treatment (MAT) for opioid use 
+            disorder — including Suboxone (buprenorphine/naloxone). MAT is an 
+            FDA-approved, evidence-based treatment that reduces cravings and withdrawal, 
+            and supports long-term recovery.
+          </p>
+          <p>
+            We approach MAT without judgment. Opioid use disorder is a medical condition, 
+            and patients seeking help deserve the same respect and care as any other patient.
+          </p>
+          <ul class="mat-points" aria-label="MAT program details">
+            <li>Suboxone / buprenorphine treatment</li>
+            <li>Structured, compliant treatment plans</li>
+            <li>Opioid use disorder evaluation</li>
+            <li>Ongoing medication management</li>
+            <li>In-person and telehealth options</li>
+            <li>Referral required to start</li>
+          </ul>
+          <div style="margin-top: var(--space-md); display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="tel:3022806358" class="btn btn-primary">Call to Schedule — 302-280-6358</a>
+            <a href="faq.html" class="btn btn-outline-light">MAT Questions &amp; FAQ</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section-sm" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
+      <div class="container text-center">
+        <span class="section-label fade-up">Ready to Start?</span>
+        <h2 class="fade-up" data-delay="1">A referral is required to become a patient.</h2>
+        <p class="fade-up" data-delay="2" style="margin: 0.75rem auto var(--space-md);">
+          You or your doctor's office can call us directly. We'll walk you through 
+          what to expect and schedule your first appointment.
+        </p>
+        <div class="fade-up" data-delay="3" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="tel:3022806358" class="btn btn-primary">Call 302-280-6358</a>
+          <a href="new-patients.html" class="btn btn-outline">New Patient Information</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" aria-label="Four Peaks Medical">
+            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18,145 78,42 138,145"/><path d="M55,88 Q62,82 70,86 Q76,80 84,84"/><path d="M44,105 Q54,98 62,102"/><path d="M90,100 Q100,94 108,98"/><polyline points="100,145 168,28 222,90 248,145"/><path d="M145,72 Q154,65 163,70 Q170,62 178,67"/><path d="M132,95 Q143,88 152,93"/><path d="M178,88 Q190,82 200,87"/><polyline points="210,145 272,30 326,90 348,145"/><path d="M248,72 Q257,65 265,70 Q272,62 280,67"/><path d="M236,94 Q246,87 255,92"/><path d="M278,88 Q289,82 299,87"/><polyline points="312,145 364,50 402,145"/><path d="M344,90 Q352,83 360,88"/><path d="M334,108 Q344,101 352,106"/><path d="M366,102 Q375,96 383,100"/></svg>
+            <div class="site-logo-text"><span class="name">Four Peaks Medical</span></div>
+          </a>
+          <p>Compassionate pain management and medication-assisted treatment in Laurel, Delaware.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="new-patients.html">New Patients</a></li>
+            <li><a href="insurance-fees.html">Insurance &amp; Fees</a></li>
+            <li><a href="telehealth.html">Telehealth</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            116 E. Front Street, Suite A<br />Laurel, DE 19956<br /><br />
+            <a href="tel:3022806358">302-280-6358</a><br />
+            Fax: 302-280-6321<br /><br />
+            Mon – Fri, 8:00 AM – 4:00 PM<br />By appointment only
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Four Peaks Medical. All rights reserved.</span>
+        <span>Brooke Montgomery, FNP-B &mdash; Licensed in Delaware</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/schema.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
